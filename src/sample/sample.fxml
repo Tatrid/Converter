@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="251.0"
+      prefWidth="541.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.Controller">
+    <children>
+
+        <ComboBox fx:id="ComboBox1" value="USD" layoutX="66.0" layoutY="89.0" prefWidth="150.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="MDL"/>
+                    <String fx:value="RON"/>
+                    <String fx:value="USD"/>
+                    <String fx:value="EUR"/>
+                    <String fx:value="RUB"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <TextField fx:id="TextField1" layoutX="67.0" layoutY="44.0"/>
+        <TextField fx:id="TextField2" layoutX="333.0" layoutY="44.0"/>
+        <Button onMouseClicked="#Convert_Clicked" layoutX="376.0" layoutY="186.0" mnemonicParsing="false" prefHeight="41.0"
+                prefWidth="106.0" text="Convert"/>
+        <ComboBox fx:id="ComboBox2"  value="MDL" layoutX="332.0" layoutY="89.0" prefWidth="150.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="MDL"/>
+                    <String fx:value="RON"/>
+                    <String fx:value="USD"/>
+                    <String fx:value="EUR"/>
+                    <String fx:value="RUB"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+    </children>
+</Pane>
